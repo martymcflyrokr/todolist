@@ -1,0 +1,107 @@
+:root {
+    --primary:rgb(68, 68, 68);
+    --secondary: #171717;
+    --light: #EDEDED;
+    --dark: #000;
+    --disabled: rgb(194, 194, 194);
+    --texts:#EDEDED;
+}
+*{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5 rem;
+}
+
+h1{
+    color: var(--texts);
+}
+
+
+.borde-redondo {
+    border-radius: 5px;
+}
+
+.contenedor-general {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    width: 400px;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, #171717, #18191c, #151b21, #0f1f25, #072227);}
+
+#input {
+    border: 0 ;
+}
+
+.contenedor-ingreso-tarea {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenedor-listado {
+    background-color: var(--light);
+    width: 500px;
+    height: 400px;
+    margin-bottom: 10px;
+    overflow-x:scroll;
+}
+
+.contenedor-ingreso-tarea {
+    margin-bottom: 10px;
+}
+
+.tarea-nueva-div{
+    
+    background-color: rgb(79, 189, 186);
+    padding: 8px;
+    margin-top: 1px;
+    margin-bottom: 0.5px;
+    color: var(--light);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+form {
+    margin:20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+.btn-eliminar-tarea {
+    background-color: rgb(211, 72, 72);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    border:none;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+
+.contenedor-botones {
+    display: flex;
+}
+
+.checkbox-btn{
+    width: 30px;
+}
+
+.resuelta{
+    color: #ffffff;
+    background-color: var(--disabled);
+}
+
+
+
